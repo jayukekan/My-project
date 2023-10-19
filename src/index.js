@@ -5,14 +5,18 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 // import Comp from './comp';
 // import Hello from './Hello';
-import ToDo from './Todo';
+import Todo from './Todo';
 
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-   <Todo color="black" size="33"/>
+   <Todo color="black" size="33" clickEvent={()=>
+      {
+        console.log("who clicked my button??")
+        alert("who clicked my button??")
+      }}/>
     {/* <Hello color="black" size="33" clickEvent={()=>
       {
         console.log("who clicked my button??")
